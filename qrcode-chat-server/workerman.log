@@ -1,0 +1,120 @@
+2016-04-14 23:01:42 client_id:7f00000108fc0000003b	client_ip:-1224285899
+exception 'PDOException' with message 'SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'msg_content' at row 1' in D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php:1611
+Stack trace:
+#0 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1611): PDOStatement->execute()
+#1 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1701): GatewayWorker\Lib\DbConnection->execute('INSERT INTO `yd...', NULL)
+#2 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(332): GatewayWorker\Lib\DbConnection->query('INSERT INTO `yd...')
+#3 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(173): YiDou\Core\CMessageManager->ProcessGroupChat('7f00000108fc000...', Array)
+#4 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(331): YiDou\Core\CMessageManager->ProcessMessage(7, '7f00000108fc000...', Array)
+#5 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(136): Event::ProcMsg(7, '7f00000108fc000...', Array)
+#6 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(216): Event::onMessage('7f00000108fc000...', '{"version":"1.0...')
+#7 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Connection\TcpConnection.php(471): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #37)
+#10 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Events\Select.php(253): call_user_func_array(Array, Array)
+#11 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(734): Workerman\Events\Select->loop()
+#12 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(96): Workerman\Worker->run()
+#13 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(422): GatewayWorker\BusinessWorker->run()
+#14 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(339): Workerman\Worker::runAllWorkers()
+#15 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\start_businessworker.php(44): Workerman\Worker::runAll()
+#16 {main}
+2016-04-14 23:03:45 client_id:7f00000108fc0000003b	client_ip:-1224285899
+exception 'PDOException' with message 'SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'msg_content' at row 1' in D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php:1611
+Stack trace:
+#0 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1611): PDOStatement->execute()
+#1 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1701): GatewayWorker\Lib\DbConnection->execute('INSERT INTO `yd...', NULL)
+#2 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(332): GatewayWorker\Lib\DbConnection->query('INSERT INTO `yd...')
+#3 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(173): YiDou\Core\CMessageManager->ProcessGroupChat('7f00000108fc000...', Array)
+#4 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(331): YiDou\Core\CMessageManager->ProcessMessage(7, '7f00000108fc000...', Array)
+#5 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(136): Event::ProcMsg(7, '7f00000108fc000...', Array)
+#6 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(216): Event::onMessage('7f00000108fc000...', '{"version":"1.0...')
+#7 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Connection\TcpConnection.php(471): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #37)
+#10 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Events\Select.php(253): call_user_func_array(Array, Array)
+#11 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(734): Workerman\Events\Select->loop()
+#12 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(96): Workerman\Worker->run()
+#13 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(422): GatewayWorker\BusinessWorker->run()
+#14 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(339): Workerman\Worker::runAllWorkers()
+#15 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\start_businessworker.php(44): Workerman\Worker::runAll()
+#16 {main}
+2016-04-15 09:24:01 client_id:7f00000108fc00000045	client_ip:1971867517
+exception 'PDOException' with message 'SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'msg_content' at row 1' in D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php:1611
+Stack trace:
+#0 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1611): PDOStatement->execute()
+#1 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1701): GatewayWorker\Lib\DbConnection->execute('INSERT INTO `yd...', NULL)
+#2 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(332): GatewayWorker\Lib\DbConnection->query('INSERT INTO `yd...')
+#3 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(173): YiDou\Core\CMessageManager->ProcessGroupChat('7f00000108fc000...', Array)
+#4 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(331): YiDou\Core\CMessageManager->ProcessMessage(7, '7f00000108fc000...', Array)
+#5 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(136): Event::ProcMsg(7, '7f00000108fc000...', Array)
+#6 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(216): Event::onMessage('7f00000108fc000...', '{"version":"1.0...')
+#7 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Connection\TcpConnection.php(471): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #37)
+#10 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Events\Select.php(253): call_user_func_array(Array, Array)
+#11 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(734): Workerman\Events\Select->loop()
+#12 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(96): Workerman\Worker->run()
+#13 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(422): GatewayWorker\BusinessWorker->run()
+#14 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(339): Workerman\Worker::runAllWorkers()
+#15 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\start_businessworker.php(44): Workerman\Worker::runAll()
+#16 {main}
+2016-04-15 09:24:26 client_id:7f00000108fc00000045	client_ip:1971867517
+exception 'PDOException' with message 'SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'msg_content' at row 1' in D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php:1611
+Stack trace:
+#0 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1611): PDOStatement->execute()
+#1 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1701): GatewayWorker\Lib\DbConnection->execute('INSERT INTO `yd...', NULL)
+#2 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(332): GatewayWorker\Lib\DbConnection->query('INSERT INTO `yd...')
+#3 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(173): YiDou\Core\CMessageManager->ProcessGroupChat('7f00000108fc000...', Array)
+#4 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(331): YiDou\Core\CMessageManager->ProcessMessage(7, '7f00000108fc000...', Array)
+#5 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(136): Event::ProcMsg(7, '7f00000108fc000...', Array)
+#6 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(216): Event::onMessage('7f00000108fc000...', '{"version":"1.0...')
+#7 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Connection\TcpConnection.php(471): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #37)
+#10 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Events\Select.php(253): call_user_func_array(Array, Array)
+#11 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(734): Workerman\Events\Select->loop()
+#12 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(96): Workerman\Worker->run()
+#13 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(422): GatewayWorker\BusinessWorker->run()
+#14 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(339): Workerman\Worker::runAllWorkers()
+#15 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\start_businessworker.php(44): Workerman\Worker::runAll()
+#16 {main}
+2016-04-15 09:25:22 client_id:7f00000108fc00000045	client_ip:1971867517
+exception 'PDOException' with message 'SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'msg_content' at row 1' in D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php:1611
+Stack trace:
+#0 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1611): PDOStatement->execute()
+#1 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1701): GatewayWorker\Lib\DbConnection->execute('INSERT INTO `yd...', NULL)
+#2 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(332): GatewayWorker\Lib\DbConnection->query('INSERT INTO `yd...')
+#3 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(173): YiDou\Core\CMessageManager->ProcessGroupChat('7f00000108fc000...', Array)
+#4 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(331): YiDou\Core\CMessageManager->ProcessMessage(7, '7f00000108fc000...', Array)
+#5 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(136): Event::ProcMsg(7, '7f00000108fc000...', Array)
+#6 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(216): Event::onMessage('7f00000108fc000...', '{"version":"1.0...')
+#7 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Connection\TcpConnection.php(471): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #37)
+#10 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Events\Select.php(253): call_user_func_array(Array, Array)
+#11 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(734): Workerman\Events\Select->loop()
+#12 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(96): Workerman\Worker->run()
+#13 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(422): GatewayWorker\BusinessWorker->run()
+#14 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(339): Workerman\Worker::runAllWorkers()
+#15 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\start_businessworker.php(44): Workerman\Worker::runAll()
+#16 {main}
+2016-04-15 20:27:52 client_id:7f00000108fc00000079	client_ip:1920279200
+exception 'PDOException' with message 'SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'msg_content' at row 1' in D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php:1611
+Stack trace:
+#0 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1611): PDOStatement->execute()
+#1 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\Lib\DbConnection.php(1701): GatewayWorker\Lib\DbConnection->execute('INSERT INTO `yd...', NULL)
+#2 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(332): GatewayWorker\Lib\DbConnection->query('INSERT INTO `yd...')
+#3 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\YiDou\Core\CMessageManager.php(173): YiDou\Core\CMessageManager->ProcessGroupChat('7f00000108fc000...', Array)
+#4 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(331): YiDou\Core\CMessageManager->ProcessMessage(7, '7f00000108fc000...', Array)
+#5 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\Event.php(136): Event::ProcMsg(7, '7f00000108fc000...', Array)
+#6 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(216): Event::onMessage('7f00000108fc000...', '{"version":"1.0...')
+#7 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Connection\TcpConnection.php(471): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #37)
+#10 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Events\Select.php(253): call_user_func_array(Array, Array)
+#11 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(734): Workerman\Events\Select->loop()
+#12 D:\php_server\apache22\htdocs\qrcode-chat-server\GatewayWorker\BusinessWorker.php(96): Workerman\Worker->run()
+#13 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(422): GatewayWorker\BusinessWorker->run()
+#14 D:\php_server\apache22\htdocs\qrcode-chat-server\Workerman\Worker.php(339): Workerman\Worker::runAllWorkers()
+#15 D:\php_server\apache22\htdocs\qrcode-chat-server\Applications\Chat\start_businessworker.php(44): Workerman\Worker::runAll()
+#16 {main}

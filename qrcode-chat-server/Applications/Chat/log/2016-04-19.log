@@ -1,0 +1,14 @@
+
+[ 群聊天历史记录 ]  2016-04-19 16:39:44
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-13 21:44:47" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-19 16:39:50
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-13 21:44:47"
+                    AND A.group_id="10000" AND A.id < "9"  ORDER BY A.send_time DESC  LIMIT 0,10

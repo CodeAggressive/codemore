@@ -1,0 +1,143 @@
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-17 11:14:34
+
+
+[ @sqlQueryFollows@ ]  2016-04-17 11:14:34
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="16828"
+
+[ @sqlPost@ ]  2016-04-17 11:14:34
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (21516,14288,33202,30646,24849,42657,24252,31981,16828,16828) AND A.post_id >"0" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ @sqlPostImage@ ]  2016-04-17 11:14:34
+SELECT post_id,img_id,img_url AS post_img
+                         FROM yd_post_img WHERE `is_valid` =1 AND post_id in (4,3,2,1) ORDER BY post_id
+
+[ @sqlPostReview@ ]  2016-04-17 11:14:34
+SELECT A.post_id,A.review_id,A.leader_id,B.user_name AS reviewer_name,B.avatar AS reviewer_avatar,A.content AS review_content,A.review_time
+                      FROM `yd_post_review` AS A
+                      LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                      WHERE A.post_id in (4,3,2,1) AND A.is_valid = 1 ORDER BY A.post_id
+
+[ @sqlPostFavorite@ ]  2016-04-17 11:14:34
+SELECT A.post_id,A.favorite_id,A.leader_id,B.user_name AS favoriter_name,B.avatar AS favoriter_avatar,A.favorite_date
+                        FROM yd_post_favorite AS A
+                        LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                        WHERE A.is_valid = 1 AND A.post_id in (4,3,2,1) ORDER BY A.favorite_date DESC
+
+[ *********** ProcessPostList  End *********** ]  2016-04-17 11:14:34
+
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-17 11:14:38
+
+
+[ @sqlQueryFollows@ ]  2016-04-17 11:14:38
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="16828"
+
+[ @sqlPost@ ]  2016-04-17 11:14:38
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (21516,14288,33202,30646,24849,42657,24252,31981,16828,16828) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-17 11:14:41
+
+
+[ @sqlQueryFollows@ ]  2016-04-17 11:14:41
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="16828"
+
+[ @sqlPost@ ]  2016-04-17 11:14:41
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (21516,14288,33202,30646,24849,42657,24252,31981,16828,16828) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-17 11:14:41
+
+
+[ @sqlQueryFollows@ ]  2016-04-17 11:14:42
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="16828"
+
+[ @sqlPost@ ]  2016-04-17 11:14:42
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (21516,14288,33202,30646,24849,42657,24252,31981,16828,16828) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-17 11:14:42
+
+
+[ @sqlQueryFollows@ ]  2016-04-17 11:14:42
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="16828"
+
+[ @sqlPost@ ]  2016-04-17 11:14:42
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (21516,14288,33202,30646,24849,42657,24252,31981,16828,16828) AND A.post_id >"4" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-17 11:14:44
+
+
+[ @sqlQueryFollows@ ]  2016-04-17 11:14:44
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="16828"
+
+[ @sqlPost@ ]  2016-04-17 11:14:44
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (21516,14288,33202,30646,24849,42657,24252,31981,16828,16828) AND A.post_id >"4" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ 群聊天历史记录 ]  2016-04-17 11:15:08
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-17 11:13:54" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-17 14:11:07
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-17 11:13:54" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-17 14:11:17
+
+
+[ @sqlQueryFollows@ ]  2016-04-17 14:11:17
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="16828"
+
+[ @sqlPost@ ]  2016-04-17 14:11:17
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (21516,14288,33202,30646,24849,42657,24252,31981,16828,16828) AND A.post_id >"0" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ @sqlPostImage@ ]  2016-04-17 14:11:17
+SELECT post_id,img_id,img_url AS post_img
+                         FROM yd_post_img WHERE `is_valid` =1 AND post_id in (4,3,2,1) ORDER BY post_id
+
+[ @sqlPostReview@ ]  2016-04-17 14:11:17
+SELECT A.post_id,A.review_id,A.leader_id,B.user_name AS reviewer_name,B.avatar AS reviewer_avatar,A.content AS review_content,A.review_time
+                      FROM `yd_post_review` AS A
+                      LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                      WHERE A.post_id in (4,3,2,1) AND A.is_valid = 1 ORDER BY A.post_id
+
+[ @sqlPostFavorite@ ]  2016-04-17 14:11:17
+SELECT A.post_id,A.favorite_id,A.leader_id,B.user_name AS favoriter_name,B.avatar AS favoriter_avatar,A.favorite_date
+                        FROM yd_post_favorite AS A
+                        LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                        WHERE A.is_valid = 1 AND A.post_id in (4,3,2,1) ORDER BY A.favorite_date DESC
+
+[ *********** ProcessPostList  End *********** ]  2016-04-17 14:11:17
+
+
+[ 群聊天历史记录 ]  2016-04-17 22:20:24
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-13 21:44:47" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10

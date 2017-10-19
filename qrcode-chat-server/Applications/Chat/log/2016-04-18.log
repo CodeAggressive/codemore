@@ -1,0 +1,52 @@
+
+[ 群聊天历史记录 ]  2016-04-18 09:48:19
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-13 21:43:38" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 私聊历史记录 ]  2016-04-18 13:42:16
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="32164"  AND A.receiver_id ="24252")
+                OR (A.receiver_id = "32164" AND A.sender_id ="24252") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-18 13:42:31
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-18 13:40:52" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-18 13:42:38
+
+
+[ @sqlQueryFollows@ ]  2016-04-18 13:42:38
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="32164"
+
+[ @sqlPost@ ]  2016-04-18 13:42:38
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (24252,32164) AND A.post_id >"0" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-18 13:43:31
+
+
+[ @sqlQueryFollows@ ]  2016-04-18 13:43:31
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="32164"
+
+[ @sqlPost@ ]  2016-04-18 13:43:31
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (24252,32164) AND A.post_id >"0" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ 群聊天历史记录 ]  2016-04-18 14:28:47
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-13 21:43:38" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10

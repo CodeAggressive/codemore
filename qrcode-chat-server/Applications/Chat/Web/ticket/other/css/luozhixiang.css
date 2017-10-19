@@ -1,0 +1,139 @@
+#herder{
+    width: 100%;
+    background: url("../image/banner.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    border-bottom: .15rem solid #eee;
+}
+.main{
+    width: 92%;
+    margin: 0 auto;
+}
+#title{
+    width: 100%;
+    overflow: hidden;
+}
+#title p{
+    margin-bottom: 0;
+    color: #133368;
+}
+#name{
+    margin-top: .2rem;
+    font-size: .3rem;
+}
+#area{
+    font-weight: bold;
+    font-size: .3rem;
+    margin-top: 0;
+    margin-bottom: .14rem !important;
+}
+#area em{
+    font-weight: normal;
+    font-style: normal;
+}
+#content_video{
+    width: 100%;
+}
+#video{
+    width: 100%;
+    height: 100%;
+    border-bottom: .15rem solid #eee;
+}
+
+#present{
+    width: 100%;
+    border-bottom: .15rem solid #eee;
+    position: relative;
+}
+#present p{
+    width: 94%;
+    color: #8d8d8d;
+    text-indent: .5rem;
+    font-size: .26rem;
+    margin: 0 auto .15rem;
+    line-height: .5rem;
+}
+#present i{
+    float: left;
+    width: .55rem;
+    position:absolute;
+    right: 0;
+    bottom: -.07rem;
+}
+#present i img{
+    width: 100%;
+}
+#content_diqu{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: .3rem;
+}
+#content_diqu ul li{
+    line-height: .8rem;
+
+    text-indent: .5rem;
+    font-size: .26rem;
+}
+#diqu{
+    background: url("../image/map.png") -.1rem center no-repeat;
+    background-size: .6rem;
+    color: #5798d3;
+}
+#time{
+    background: url("../image/date.png") -.09rem center no-repeat;
+    background-size: .6rem;
+    color: #ff9518;
+}
+#foot{
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: 1px dashed #dcdcdc;
+    position: relative;
+}
+#left{
+    position: absolute;
+    left: 0;
+    width: .39rem;
+    height: .75rem;
+    top: -.37rem;
+    background: url("../image/cycle.png") no-repeat;
+    background-size: .6rem;
+}
+#right{
+    position: absolute;
+    right: 0;
+    width: .39rem;
+    height: .75rem;
+    top: -.37rem;
+    background: url("../image/cycle.png") right 0 no-repeat;
+    background-size: .6rem;
+
+}
+#fenxiang{
+    width: 92%;
+    height: .8rem;
+    margin: .3rem 4%;
+    background: #51c332 url("../image/fenxiang.png") 1.6rem center no-repeat;
+    border: 1px solid #51c332;
+    border-radius: .07rem;
+    font-size: .26rem;
+    color: #FFF;
+    background-size: .55rem;
+    padding-left: .7rem;
+}
+
+#ticket{
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px dashed #dcdcdc;
+}
+#piao{
+    width: 92%;
+    height: .8rem;
+    margin: .3rem 4%;
+    background: #0a89ff;
+    color: #FFF;
+    font-size: .26rem;
+    border-radius: .07rem;
+    border: 1px solid #0a89ff;
+}

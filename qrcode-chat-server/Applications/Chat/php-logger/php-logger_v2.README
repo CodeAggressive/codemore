@@ -1,0 +1,142 @@
+README
+
+FILE: log_session_class.inc
+AUTHORS: Jeremy Nelson and John Dunning
+ORGANIZATION: Wayne State College
+DATE: September 11, 2003
+
+log_session_class.inc is an OOP approach to logging.
+
+The idea was to create a logger that could be used by multiple applications at the same time.  The logger supports mutliple simultaneous log destinations (instances).
+Each instance has independent control.
+
+All configurable options are in the php-logger.cfg file.  DO NOT modify the php-logger_vx.inc file unless you know EXACTLY what you are doing.
+
+Supports the following log instance types:
+
+    local       Creates a local log file in either archive or append mode and uses syslog style entries in this file.  This mode supports queueing (see below).
+    email       Creates an e-mail whose body contains syslog style entries
+    syslog      Sends log entries to local syslog facility
+    console     Dumps messages directly to the console (will show up in a web page)
+
+Message thresholding:
+    Every log instance type supports thresholding using the syslog error levels (DEBUG, INFO, WARNING, NOTICE, ERROR, CRITICAL, ALERT, EMERG)  These constants are
+    defined in the cfg file and I believe that PHP also has them defined as LOG_DEBUG, etc - though I have had inconsistent success using those so I just use my
+    own.  There is a default instance threshold defined in the configuration file as well as a directive to change the threshold for each instance independently.
+
+Message queueing:
+    Some instance types (local and email) support message queueing.  This can be beneficial from a performance point of view in certain cases but the real benefit comes from
+    what we call error_condition thresholding.  If queueing is enabled then you have two more thresholds to play with:
+        error_condition_trigger_threshold       The threshold at which the instance enters error condition status
+        error_condition_threshold               The threshold at which entries are output while in error condition status
+
+    In essence - all entries to the log instances are logged to the queue - even if they don't meet the original queue threshold.  When the queue gets to max_queue_size
+    then the oldest message in the queue is compared against the standard queue threshold and logged if they are at or above (numerically below) that threshold.
+
+    In error condition status the queue is immediately flushed and messages are logged as normal except that they are compared against the error_condition_threshold
+    instead of the standard threshold.
+
+    For example - if you normally logged at NOTICE level, but wanted to see DEBUG messages if a CRITICAL condition occured you can do so by setting the threshold to
+    NOTICE, the error_condition_trigger_threshold to CRITICAL and the error_condition_threshold to DEBUG.  If a CRITICAL condition occured you would see (up to 
+    max_queue_size) DEBUG or more severe messages in the log preceeding it.  
+
+    If for any reason you want to further isolate a problem you can issue a flush_queue directive to the instance just before you enter the questionable area
+    of your code so that you aren't inundated with DEBUG message that occured prior to the area you are concerned with.
+
+USAGE:
+
+    Include the php-logger_v2.inc file at the beginning of your php source:
+
+        include ('/path/php-logger_v2.inc');
+
+Opening session:
+
+    $log = new log_session(string calling_application_name); 
+                                                    // calling_application_name is used to identify log entries in syslog and other destinations
+
+Starting a logging instance:
+    int $log->enable_log_instance(string type);     // valid types are:     
+                                                    //      local       supports message queueing
+                                                    //      console     does not support message queueing
+                                                    //      syslog      does not support message queueing
+                                                    //      email       supports message queueing
+                                                    // enable_log_instance returns an integer for accessing that particular instance with future commands
+
+Stopping a logging instance:
+    $log->disable_log_instance(int instance);       // instance is an integer corresponding to a particular logger instance 
+
+Per instance configuration (for all instance types):
+
+    $log->configure_instance(mixed instance, string directive, [mixed param1, ... mixed paramx])// All configuration of individual instances is done
+                                                                                                // with the configure_instance function
+                                                                                                // Each directive really amounts to a function inside
+                                                                                                // the instance so there may be parameters to be passed
+                                                                                                // Parameters are listed below in parens for readability
+                                                                                                // but should be passed as comma delimited parameters
+                                                                                                // instance can either be an integer correponding to a
+                                                                                                // particular logger instance or a string containing
+                                                                                                // a valid instance type in which case the configuration is
+                                                                                                // applied to all instances of that type
+
+
+            Directives for all instance types:
+                    enable_queue_mode               // Enables queueing mode (or logs an error to the logger's own log if the type doesn't support queueing
+
+                    flush_queue                     // Flushes the message queue
+
+                    disable_queue_mode              // Flushes the queue and disables queueing mode
+
+                    set_thresh ( int threshold )    // Sets the instance threshold
+
+                    set_max_queue_size ( int size ) // Enables queueing mode and sets maximum queue size.  If queueing was already enabled and this number
+                                                    // is smaller than the previous max_queue_size this will force a partial queue flush when the next entry 
+                                                    // in the log is received to get the queue down to the right size
+
+                    set_error_condition_trigger_thresh ( int threshold )
+                                                    // Enables queueing mode and sets a threshold at which the queue goes into error condition 
+
+                    set_error_condition_thresh  (int threshold)
+                                                    // Enables queueing mode and sets the threshold at which messages are logged while in error condition
+
+
+            Directives for local instance types:
+                    local_set_logfile_mode ( string mode )
+                                                    // Mode can be either "APPEND" or "ARCHIVE" - in archive mode the existing logfile (if it exists in the same
+                                                    // path) is renamed with the current date appended to the name
+
+                    local_set_logfile_name  ( string name )
+                                                    // the filename - duh
+
+                    local_set_logfile_path  ( string path )
+                                                    // the path in which the file should reside - will automatically append a / if needed
+
+
+            Directives for local instance types:
+                    console_set_web                 // formats the console log messages for the web, rather than for command line
+
+            Directives for e-mail instance types:
+                    email_set_recipient ( string address )
+
+                    email_set_sender    ( string address )
+    
+                    email_set_subject   ( string subject )
+
+            Directives for syslog instance types:
+                    syslog_set_facility ( string facility )
+                                                    // Sets the syslog facility to use - these are predefined constants by PHP LOG_LOCAL6 is the default
+
+Actually logging a message:
+
+    $log->log_entry ([string "{+|-}instance"], string category, string severity, string message); 
+                                                    // +instance =  force logging of message to instance regardless of thresholding
+                                                    // -instance =  prevent logging of message to instance regardless of thresholding  
+                                                    //              instance itself can be an integer instance or a string containing a valid instance type
+                                                    //              in which case the force applies to all instances of that type
+                                                    // category =   category of the log message, ie "LDAP" or "FTP"
+                                                    //              valid categories are enumerated in the configuration file php-logger.cfg
+                                                    // severity =   severity of the log message, ie "CRITICAL" or "INFO"
+                                                    // message =    message you want to log, ie "USER: Foo NOT AUTHENTICATED TO SERVER: Bar.com
+
+Closing session:
+
+    $log->close_log(); // Closes all open log instances - flushing queues and closing resource handles

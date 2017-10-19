@@ -1,0 +1,1816 @@
+
+[ 私聊历史记录 ]  2016-04-11 17:02:10
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:03:31
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:04:23
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:04:46
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 17:04:49
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "82"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:04:57
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "72"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:05:00
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "62"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:05:02
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "52"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:06:30
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:07:12
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:07:38
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:08:34
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:13:14
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:13:52
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:15:24
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:16:04
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:16:26
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:16:38
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 私聊历史记录 ]  2016-04-11 17:17:02
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="32714")
+                OR (A.receiver_id = "12417" AND A.sender_id ="32714") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:17:21
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="23159")
+                OR (A.receiver_id = "12417" AND A.sender_id ="23159") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:17:25
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:17:30
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="16773")
+                OR (A.receiver_id = "12417" AND A.sender_id ="16773") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:03
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:08
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "82"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:14
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "72"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:15
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "62"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:17
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "52"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:20
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "42"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:22
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "32"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:25
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "22"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:28
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "12"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:29
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:30
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:31
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:32
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:33
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:34
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:35
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:35
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:37
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:55
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:56
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:57
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:58
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:19:59
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:00
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:02
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:03
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:03
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:04
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:05
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:06
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:06
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:07
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:07
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:08
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:09
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:10
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:11
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:12
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:13
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:15
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:16
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:17
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:20
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:22
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:24
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:51
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:51
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:52
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:53
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:53
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:54
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:55
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:55
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:56
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:57
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:58
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:58
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:20:59
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:21:00
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:21:01
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:21:01
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 17:21:02
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:11:18"
+                    AND A.group_id="10000" AND A.id < "7"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:21:08
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:23:20
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:23:23
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 17:23:33
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:05
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:05
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:05
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (35175) AND A.post_id >"0" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:34
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:34
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:34
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id >"0" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ @sqlPostImage@ ]  2016-04-11 18:39:34
+SELECT post_id,img_id,img_url AS post_img
+                         FROM yd_post_img WHERE `is_valid` =1 AND post_id in (5,4,3,2,1) ORDER BY post_id
+
+[ @sqlPostReview@ ]  2016-04-11 18:39:34
+SELECT A.post_id,A.review_id,A.leader_id,B.user_name AS reviewer_name,B.avatar AS reviewer_avatar,A.content AS review_content,A.review_time
+                      FROM `yd_post_review` AS A
+                      LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                      WHERE A.post_id in (5,4,3,2,1) AND A.is_valid = 1 ORDER BY A.post_id
+
+[ @sqlPostFavorite@ ]  2016-04-11 18:39:34
+SELECT A.post_id,A.favorite_id,A.leader_id,B.user_name AS favoriter_name,B.avatar AS favoriter_avatar,A.favorite_date
+                        FROM yd_post_favorite AS A
+                        LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                        WHERE A.is_valid = 1 AND A.post_id in (5,4,3,2,1) ORDER BY A.favorite_date DESC
+
+[ *********** ProcessPostList  End *********** ]  2016-04-11 18:39:34
+
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:37
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:37
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:37
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id >"5" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:40
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:40
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:40
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:41
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:41
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:41
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:41
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:41
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:41
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:43
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:43
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:43
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:44
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:44
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:44
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:44
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:44
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:44
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:46
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:46
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:46
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:47
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:47
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:47
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:48
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:48
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:48
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:50
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:50
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:50
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:50
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 18:39:50
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 18:39:50
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:53
+
+
+[ @sqlPost@ ]  2016-04-11 18:39:53
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  ="12549" AND A.post_id >"0"  ORDER BY A.post_time DESC LIMIT 0,5
+
+[ @sqlPostImage@ ]  2016-04-11 18:39:53
+SELECT post_id,img_id,img_url AS post_img
+                         FROM yd_post_img WHERE `is_valid` =1 AND post_id in (5,4,3) ORDER BY post_id
+
+[ @sqlPostReview@ ]  2016-04-11 18:39:53
+SELECT A.post_id,A.review_id,A.leader_id,B.user_name AS reviewer_name,B.avatar AS reviewer_avatar,A.content AS review_content,A.review_time
+                      FROM `yd_post_review` AS A
+                      LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                      WHERE A.post_id in (5,4,3) AND A.is_valid = 1 ORDER BY A.post_id
+
+[ @sqlPostFavorite@ ]  2016-04-11 18:39:53
+SELECT A.post_id,A.favorite_id,A.leader_id,B.user_name AS favoriter_name,B.avatar AS favoriter_avatar,A.favorite_date
+                        FROM yd_post_favorite AS A
+                        LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                        WHERE A.is_valid = 1 AND A.post_id in (5,4,3) ORDER BY A.favorite_date DESC
+
+[ *********** ProcessPostList  End *********** ]  2016-04-11 18:39:53
+
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:39:56
+
+
+[ @sqlPost@ ]  2016-04-11 18:39:56
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  ="35175" AND A.post_id <"3"  ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 18:40:05
+
+
+[ @sqlPost@ ]  2016-04-11 18:40:05
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  ="16773" AND A.post_id >"0"  ORDER BY A.post_time DESC LIMIT 0,5
+
+[ @sqlPostImage@ ]  2016-04-11 18:40:05
+SELECT post_id,img_id,img_url AS post_img
+                         FROM yd_post_img WHERE `is_valid` =1 AND post_id in (2,1) ORDER BY post_id
+
+[ @sqlPostReview@ ]  2016-04-11 18:40:05
+SELECT A.post_id,A.review_id,A.leader_id,B.user_name AS reviewer_name,B.avatar AS reviewer_avatar,A.content AS review_content,A.review_time
+                      FROM `yd_post_review` AS A
+                      LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                      WHERE A.post_id in (2,1) AND A.is_valid = 1 ORDER BY A.post_id
+
+[ @sqlPostFavorite@ ]  2016-04-11 18:40:05
+SELECT A.post_id,A.favorite_id,A.leader_id,B.user_name AS favoriter_name,B.avatar AS favoriter_avatar,A.favorite_date
+                        FROM yd_post_favorite AS A
+                        LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                        WHERE A.is_valid = 1 AND A.post_id in (2,1) ORDER BY A.favorite_date DESC
+
+[ *********** ProcessPostList  End *********** ]  2016-04-11 18:40:05
+
+
+[ 朋友圈点赞 ]  2016-04-11 18:40:09
+INSERT INTO `yd_post_favorite`(`post_id`,`leader_id`)
+              VALUES(1,35175) ON DUPLICATE KEY UPDATE `is_valid`=1
+
+[ 朋友圈取消点赞 ]  2016-04-11 18:40:10
+UPDATE `yd_post_favorite` SET `is_valid`=0 WHERE `post_id`=1 AND `leader_id`=35175
+
+[ 私聊历史记录 ]  2016-04-11 18:42:45
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 18:42:47
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 18:42:51
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 18:48:41
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 18:53:22
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 18:55:54
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 18:56:23
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 18:57:11
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 18:57:15
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 19:02:30
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 19:02:55
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:32:37" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 19:03:04
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 19:04:07
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:32:37" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 19:34:57
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 私聊历史记录 ]  2016-04-11 19:39:10
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 20:40:36
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 20:44:05
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:32:37" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 20:55:39
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:32:37" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 20:59:43
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 21:00:19
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 21:01:01
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:32:37" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 21:03:03
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 21:07:13
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 21:17:47
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:32:37" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 21:17:52
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:32:37"
+                    AND A.group_id="10000" AND A.id < "100"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 21:17:52
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:32:37"
+                    AND A.group_id="10000" AND A.id < "90"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 21:17:54
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:32:37"
+                    AND A.group_id="10000" AND A.id < "80"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 21:17:55
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:32:37"
+                    AND A.group_id="10000" AND A.id < "70"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 21:17:56
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:32:37"
+                    AND A.group_id="10000" AND A.id < "60"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 21:17:58
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:32:37"
+                    AND A.group_id="10000" AND A.id < "50"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 21:18:13
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 私聊历史记录 ]  2016-04-11 21:29:16
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="35175"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "35175" AND A.sender_id ="40732") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:29:25
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="35175"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "35175" AND A.sender_id ="40732") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:29:27
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "35175" AND A.sender_id ="40732"))
+                AND A.id <"91" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:29:29
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "35175" AND A.sender_id ="40732"))
+                AND A.id <"91" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:29:40
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:29:59
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:30:01
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732"))
+                AND A.id <"92" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:30:03
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732"))
+                AND A.id <"92" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:30:20
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732"))
+                AND A.id <"92" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:31:18
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732"))
+                AND A.id <"92" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:31:46
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:31:48
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732"))
+                AND A.id <"92" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:31:49
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732"))
+                AND A.id <"92" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:33:18
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="32714")
+                OR (A.receiver_id = "12417" AND A.sender_id ="32714") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:33:20
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="32714")
+                OR (A.receiver_id = "12417" AND A.sender_id ="32714") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:33:43
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="32714")
+                OR (A.receiver_id = "12417" AND A.sender_id ="32714") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:48:09
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="19046")
+                OR (A.receiver_id = "12417" AND A.sender_id ="19046") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:48:43
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="29550")
+                OR (A.receiver_id = "12417" AND A.sender_id ="29550") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:48:45
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="29550")
+                OR (A.receiver_id = "12417" AND A.sender_id ="29550") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:48:47
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="29550")
+                OR (A.receiver_id = "12417" AND A.sender_id ="29550") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:50:52
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="29550")
+                OR (A.receiver_id = "12417" AND A.sender_id ="29550") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:50:55
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "12417" AND A.sender_id ="14517") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:50:57
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "12417" AND A.sender_id ="14517") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:50:58
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "12417" AND A.sender_id ="14517") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:51:04
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "12417" AND A.sender_id ="14517"))
+                AND A.id <"64" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:51:07
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "12417" AND A.sender_id ="14517"))
+                AND A.id <"64" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:51:08
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "12417" AND A.sender_id ="14517"))
+                AND A.id <"64" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:51:08
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "12417" AND A.sender_id ="14517"))
+                AND A.id <"64" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:51:09
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "12417" AND A.sender_id ="14517"))
+                AND A.id <"64" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:51:10
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "12417" AND A.sender_id ="14517"))
+                AND A.id <"64" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 21:53:26
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 私聊历史记录 ]  2016-04-11 21:55:01
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:56:59
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:57:03
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:57:04
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 21:58:27
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 21:58:30
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 21:58:37
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 21:58:54
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 22:05:10
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 22:07:46
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:32:37" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 私聊历史记录 ]  2016-04-11 22:07:57
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:08:01
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:08:11
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:10:45
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:10:46
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:10:58
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:11:00
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:11:01
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:11:07
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:11:16
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:11:18
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:20:18
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:20:21
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732"))
+                AND A.id <"92" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:21:55
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="40732")
+                OR (A.receiver_id = "12417" AND A.sender_id ="40732"))
+                AND A.id <"92" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:21:59
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:22:01
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 22:29:54
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:32:37" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 私聊历史记录 ]  2016-04-11 22:29:56
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:07
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:09
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:10
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:10
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:11
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:17
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:17
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:18
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:21
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:32
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:33
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:31:34
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:32:00
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"54" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:32:01
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"54" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:32:04
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"54" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:32:07
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:32:10
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:32:12
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:32:13
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="12417"  AND A.receiver_id ="35175")
+                OR (A.receiver_id = "12417" AND A.sender_id ="35175"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:33:01
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:33:02
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:33:03
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE ((A.sender_id ="35175"  AND A.receiver_id ="12417")
+                OR (A.receiver_id = "35175" AND A.sender_id ="12417"))
+                AND A.id <"86" ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:33:58
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="35175"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "35175" AND A.sender_id ="14517") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 私聊历史记录 ]  2016-04-11 22:34:01
+SELECT A.id,A.sender_id,A.receiver_id,A.msg_content AS chat_content,A.msg_type AS chat_type,A.send_time,B.leader_id,B.user_name,B.user_mobile,B.avatar FROM `yd_chatmsg` A
+                LEFT JOIN `yd_user` B ON A.sender_id = B.leader_id
+                LEFT JOIN `yd_user` C ON A.receiver_id = C.leader_id
+                WHERE (A.sender_id ="35175"  AND A.receiver_id ="14517")
+                OR (A.receiver_id = "35175" AND A.sender_id ="14517") ORDER BY A.send_time DESC LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 22:34:28
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:32:37" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 22:35:29
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:32:37"
+                    AND A.group_id="10000" AND A.id < "100"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 22:35:30
+SELECT A.id AS chat_id, A.msg_content AS chat_content,A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name, C.leader_id, C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id  WHERE A.send_time > "2016-04-11 09:32:37"
+                    AND A.group_id="10000" AND A.id < "90"  ORDER BY A.send_time DESC  LIMIT 0,10
+
+[ 群聊天历史记录 ]  2016-04-11 22:39:09
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10005" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 22:39:41
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 22:39:41
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="35175"
+
+[ @sqlPost@ ]  2016-04-11 22:39:41
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (16773,12549,35175) AND A.post_id >"0" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ @sqlPostImage@ ]  2016-04-11 22:39:41
+SELECT post_id,img_id,img_url AS post_img
+                         FROM yd_post_img WHERE `is_valid` =1 AND post_id in (5,4,3,2,1) ORDER BY post_id
+
+[ @sqlPostReview@ ]  2016-04-11 22:39:41
+SELECT A.post_id,A.review_id,A.leader_id,B.user_name AS reviewer_name,B.avatar AS reviewer_avatar,A.content AS review_content,A.review_time
+                      FROM `yd_post_review` AS A
+                      LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                      WHERE A.post_id in (5,4,3,2,1) AND A.is_valid = 1 ORDER BY A.post_id
+
+[ @sqlPostFavorite@ ]  2016-04-11 22:39:41
+SELECT A.post_id,A.favorite_id,A.leader_id,B.user_name AS favoriter_name,B.avatar AS favoriter_avatar,A.favorite_date
+                        FROM yd_post_favorite AS A
+                        LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                        WHERE A.is_valid = 1 AND A.post_id in (5,4,3,2,1) ORDER BY A.favorite_date DESC
+
+[ *********** ProcessPostList  End *********** ]  2016-04-11 22:39:41
+
+
+[ 群聊天历史记录 ]  2016-04-11 22:39:46
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:32:37" AND A.group_id ="10004" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-11 22:47:54
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10005" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-11 22:48:09
+
+
+[ @sqlQueryFollows@ ]  2016-04-11 22:48:09
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="12417"
+
+[ @sqlPost@ ]  2016-04-11 22:48:09
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (12417) AND A.post_id >"0" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ 群聊天历史记录 ]  2016-04-11 22:48:13
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-11 09:11:18" AND A.group_id ="10005" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10

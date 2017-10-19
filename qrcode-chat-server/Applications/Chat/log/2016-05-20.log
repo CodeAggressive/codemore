@@ -1,0 +1,12 @@
+
+[ *********** ProcessPostList  Start *********** ]  2016-05-20 17:03:42
+
+
+[ @sqlQueryFollows@ ]  2016-05-20 17:03:42
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="33202"
+
+[ @sqlPost@ ]  2016-05-20 17:03:42
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (33202) AND A.post_id >"0" ORDER BY A.post_time DESC LIMIT 0,5

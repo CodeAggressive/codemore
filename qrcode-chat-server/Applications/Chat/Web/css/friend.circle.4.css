@@ -1,0 +1,323 @@
+.pfc-wrapper{
+    position: absolute; /***** 用绝对定位才有滑动的效果 *******/
+    width: 100%;
+    min-height: 101%; /*** 这里也不要改动*****/
+}
+.friend-post {
+    position: relative;
+    left: 0rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+.fc-cover {
+    position:relative;
+    width: 100%;
+    height: 10rem;
+}
+.fc-cover .cover-bk {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.fc-cover .cover-avatar {
+    position: absolute;
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
+    top: 1.5rem;
+    left: 7.5rem;
+}
+.fc-cover .cover-name{
+    position:absolute;
+    left:50%;
+    top:7.5rem;
+    margin-left:-5rem;
+    width:10rem;
+    text-align:center;
+    height:1rem;
+    line-height:1rem;
+    color:#FFF;
+    font-weight:bold;
+}
+.btn-new-post {
+    position: absolute;
+    width: 4rem;
+    height: 1.8rem;
+    left: 15.5rem;
+    top: 7.7rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    line-height: 1.8rem;
+    background-color: #D81E06;
+    color: #FFF;
+    text-align: center;
+}
+
+.btn-public-circle {
+    position: relative;
+    float: left;
+    top: 0rem;
+    margin-left: 8rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 5rem;
+    height: 2rem;
+    background-color: #D81E06;
+    color: #FFF;
+    text-align: center;
+    line-height: 2rem;
+    border: none;
+    outline: none;
+}
+
+.publish-circle-release {
+    position: relative;
+    width: 100%;
+    height: 2.6rem;
+    padding: 0.3rem;
+    background-color: #FFF;
+}
+
+/******* 发表朋友圈 *******/
+.publish-circle-text {
+    position: relative;
+    background-color: #FEFEFE;
+    border-bottom: 1px solid #EEE;
+    height: 8rem;
+    padding: 5%;
+    width: 100%;
+}
+
+/********* 朋友圈 动态 ***********/
+.post {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.15rem;
+    background-color: #FDFDFD;
+}
+
+.post:after {
+    content: '';
+    width: 0;
+    display: table;
+    clear: both;
+}
+
+.post_avatar {
+    border: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: block;
+    float: left;
+}
+
+.post_right {
+    width: 15.9rem;
+    float: left;
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+.post_head:after {
+    content: '';
+    width: 0;
+    display: table;
+    clear: both;
+}
+
+.post_head .post_user {
+    float: left;
+    font-weight: bold;
+}
+
+.post_head .post_time {
+    float: right;
+}
+
+.post_text {
+    position: relative;
+    margin-top: 0.3rem;
+}
+
+.post_body:after {
+    content: '';
+    width: 0;
+    display: table;
+    clear: both;
+}
+
+.post_right .jqthumb, .post_img {
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    float: left;
+    margin-right: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.post_right .jqthumb {
+    background-color: #FFF;
+}
+
+.post_btns{
+    position:relative;
+    float:left;
+    width:100%;
+}
+.post_btns:after{
+    content: '';
+    width: 0;
+    display: table;
+    clear: both;
+}
+
+.favoriter_avatar{
+    width:1.6rem;
+    height:1.6rem;
+    float:left;
+    margin-top:0.5rem;
+    margin-right:0.1rem;
+}
+.favoriter_avatar img{
+    position:relative;
+    width:1.6rem;
+    height:1.6rem;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    border:1px solid #DDD;
+}
+
+.btn_post_favorite {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url("../img/favorite.png");
+    background-size: 100% 100%;
+    float: right;
+    margin-top: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.btn_post_review {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url("../img/review.png");
+    background-size: 84% 84%;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: 0.6rem;
+    margin-left: 1rem;
+}
+
+.post_review{
+    float:left;
+    margin-top:0.8rem;
+    padding:2%;
+    position:relative;
+    width:100%;
+    background-color:#EEE;
+    border-radius:0.28rem;
+    -webkit-border-radius:0.28rem;
+}
+.review_item .review_content .emotion_qq{
+    display:inline-block;
+    width:1.1rem;
+    height:1.1rem;
+}
+.triangle-up{
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.64rem solid #EEE;
+    position:relative;
+    right:-0.18rem;
+    float:right;
+    top:-0.8rem;
+}
+.review_item{
+    position:relative;
+    width:100%;
+}
+.reviewer_name{
+    color:#05346A;
+}
+.post_text > .emotion_qq{
+    display:inline-block;
+    width:1.1rem;
+    height:1.1rem;
+}
+.post_text{
+    font-size:0.95rem;
+}
+.post_review_editor_bk{
+    z-index:10000;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:#000;
+    opacity: 0.4;
+    -webkit-opacity:0.4;
+}
+.post_review_editor{
+    z-index:10000;
+    position:fixed;
+    width:100%;
+    height:100%;
+}
+.post_review_editor .pre_input{
+    position: relative;
+    background-color: #FEFEFE;
+    border-bottom: 1px solid #EEE;
+    height: 8rem;
+    padding: 5%;
+    width: 100%;
+}
+.post_review_editor .pre_bar{
+    position: relative;
+    width: 100%;
+    height: 2.6rem;
+    padding: 0.3rem;
+    background-color: #FFF;
+}
+.post_review_editor .pre_bar .post_review_icon{
+    position: relative;
+    float: left;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    margin-left: 0.7rem;
+    width: 2rem;
+    height: 2rem;
+    background-image:url("../img/emotion.2.png");
+    background-size:100% 100%;
+}
+#pre_release_btn,#pre_cancel_btn{
+    position: relative;
+    float: right;
+    top: 0rem;
+    margin-right: 0.5rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 5rem;
+    height: 2rem;
+    background-color: #D81E06;
+    color: #FFF;
+    text-align: center;
+    line-height: 2rem;
+    border: none;
+    outline: none;
+}
+.post_review_editor .post_review_emotion{
+    position:relative;
+    top:0rem;
+    height:10rem;
+    background-color:#EEEEEE;
+}
+

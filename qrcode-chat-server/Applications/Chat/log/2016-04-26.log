@@ -1,0 +1,256 @@
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-26 12:20:46
+
+
+[ @sqlQueryFollows@ ]  2016-04-26 12:20:46
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="30747"
+
+[ @sqlPost@ ]  2016-04-26 12:20:46
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (30646,30747) AND A.post_id >"0" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ @sqlPostImage@ ]  2016-04-26 12:20:46
+SELECT post_id,img_id,img_url AS post_img
+                         FROM yd_post_img WHERE `is_valid` =1 AND post_id in (4,3,2,1) ORDER BY post_id
+
+[ @sqlPostReview@ ]  2016-04-26 12:20:46
+SELECT A.post_id,A.review_id,A.leader_id,B.user_name AS reviewer_name,B.avatar AS reviewer_avatar,A.content AS review_content,A.review_time
+                      FROM `yd_post_review` AS A
+                      LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                      WHERE A.post_id in (4,3,2,1) AND A.is_valid = 1 ORDER BY A.post_id
+
+[ @sqlPostFavorite@ ]  2016-04-26 12:20:46
+SELECT A.post_id,A.favorite_id,A.leader_id,B.user_name AS favoriter_name,B.avatar AS favoriter_avatar,A.favorite_date
+                        FROM yd_post_favorite AS A
+                        LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                        WHERE A.is_valid = 1 AND A.post_id in (4,3,2,1) ORDER BY A.favorite_date DESC
+
+[ *********** ProcessPostList  End *********** ]  2016-04-26 12:20:46
+
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-26 12:20:54
+
+
+[ @sqlQueryFollows@ ]  2016-04-26 12:20:55
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="30747"
+
+[ @sqlPost@ ]  2016-04-26 12:20:55
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (30646,30747) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-26 12:21:00
+
+
+[ @sqlQueryFollows@ ]  2016-04-26 12:21:00
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="30747"
+
+[ @sqlPost@ ]  2016-04-26 12:21:00
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (30646,30747) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-26 12:21:03
+
+
+[ @sqlQueryFollows@ ]  2016-04-26 12:21:03
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="30747"
+
+[ @sqlPost@ ]  2016-04-26 12:21:03
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (30646,30747) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ *********** ProcessPostList  Start *********** ]  2016-04-26 12:21:07
+
+
+[ @sqlQueryFollows@ ]  2016-04-26 12:21:07
+SELECT `follow_id` FROM `yd_user_follow` WHERE `is_valid`=1 AND `leader_id` ="30747"
+
+[ @sqlPost@ ]  2016-04-26 12:21:07
+SELECT A.post_id,A.leader_id,B.user_name AS poster_name,B.avatar AS poster_avatar,A.post_time,A.content AS post_content
+                    FROM `yd_post` AS A
+                    LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id
+                    WHERE A.leader_id  in (30646,30747) AND A.post_id <"1" ORDER BY A.post_time DESC LIMIT 0,5
+
+[ 群聊天历史记录 ]  2016-04-26 12:21:12
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-23 09:39:01" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群公告列表 ]  2016-04-26 12:21:16
+SELECT A.id as announce_id, A.group_id,A.leader_id,B.user_name,A.title,A.content,A.create_time FROM `yd_group_announce`
+              AS A LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id WHERE A.is_valid = 1 AND A.group_id = 10000 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 12:21:20
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 12:21:20
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群照片列表 ]  2016-04-26 12:21:31
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 12:21:31
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群照片列表 ]  2016-04-26 12:21:50
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 12:21:50
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群照片列表 ]  2016-04-26 12:22:04
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 12:22:04
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群聊天历史记录 ]  2016-04-26 12:27:42
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-23 09:39:01" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-26 12:29:29
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-23 09:39:01" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群公告列表 ]  2016-04-26 12:30:31
+SELECT A.id as announce_id, A.group_id,A.leader_id,B.user_name,A.title,A.content,A.create_time FROM `yd_group_announce`
+              AS A LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id WHERE A.is_valid = 1 AND A.group_id = 10000 ORDER BY A.create_time DESC
+
+[ 群公告列表 ]  2016-04-26 12:30:38
+SELECT A.id as announce_id, A.group_id,A.leader_id,B.user_name,A.title,A.content,A.create_time FROM `yd_group_announce`
+              AS A LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id WHERE A.is_valid = 1 AND A.group_id = 10000 ORDER BY A.create_time DESC
+
+[ 群公告列表 ]  2016-04-26 12:31:01
+SELECT A.id as announce_id, A.group_id,A.leader_id,B.user_name,A.title,A.content,A.create_time FROM `yd_group_announce`
+              AS A LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id WHERE A.is_valid = 1 AND A.group_id = 10000 ORDER BY A.create_time DESC
+
+[ 群公告列表 ]  2016-04-26 12:31:07
+SELECT A.id as announce_id, A.group_id,A.leader_id,B.user_name,A.title,A.content,A.create_time FROM `yd_group_announce`
+              AS A LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id WHERE A.is_valid = 1 AND A.group_id = 10000 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 12:31:10
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 12:31:10
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群照片列表 ]  2016-04-26 12:34:57
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 12:34:57
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群相册列表 ]  2016-04-26 12:35:04
+SELECT count(B.group_album_id) AS img_count,A.album_id,A.group_id,A.album_name,A.album_desc,A.create_time,B.path
+             FROM `yd_group_album` AS A LEFT JOIN `yd_group_album_image` AS B
+             ON A.album_id = B.group_album_id WHERE A.is_valid = 1 AND A.group_id = 10000
+             GROUP BY A.album_id ORDER BY B.create_time DESC 
+
+[ 群照片列表 ]  2016-04-26 12:35:10
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 12:35:10
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群聊天历史记录 ]  2016-04-26 20:46:24
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-23 09:39:01" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-26 20:46:25
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-23 09:39:01" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-26 20:46:25
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-23 09:39:01" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群聊天历史记录 ]  2016-04-26 20:46:31
+SELECT A.id AS chat_id, A.msg_content AS chat_content, A.msg_type AS chat_type, A.send_time AS chat_time,
+                    C.user_name AS name,C.leader_id,C.avatar FROM `yd_groupmsg` AS A
+                    LEFT JOIN `yd_group` AS B ON A.group_id = B.group_id
+                    LEFT JOIN `yd_user` AS C ON A.sender_id = C.leader_id
+                    WHERE A.send_time >"2016-04-23 09:39:01" AND A.group_id ="10000" AND A.id > (SELECT MAX(id) FROM `yd_groupmsg`) -10
+
+[ 群公告列表 ]  2016-04-26 20:46:36
+SELECT A.id as announce_id, A.group_id,A.leader_id,B.user_name,A.title,A.content,A.create_time FROM `yd_group_announce`
+              AS A LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id WHERE A.is_valid = 1 AND A.group_id = 10000 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 20:46:38
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 20:46:39
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群照片列表 ]  2016-04-26 20:46:44
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 20:46:44
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群相册列表 ]  2016-04-26 20:46:50
+SELECT count(B.group_album_id) AS img_count,A.album_id,A.group_id,A.album_name,A.album_desc,A.create_time,B.path
+             FROM `yd_group_album` AS A LEFT JOIN `yd_group_album_image` AS B
+             ON A.album_id = B.group_album_id WHERE A.is_valid = 1 AND A.group_id = 10000
+             GROUP BY A.album_id ORDER BY B.create_time DESC 
+
+[ 群照片列表 ]  2016-04-26 20:46:52
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 20:46:52
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群照片列表 ]  2016-04-26 20:47:06
+SELECT A.path,A.create_time FROM `yd_group_album_image` AS A
+               LEFT JOIN `yd_group_album` AS B ON A.group_album_id = B.album_id
+               WHERE B.group_id = 10000 AND A.is_valid = 1 AND B.is_valid = 1 ORDER BY A.create_time DESC
+
+[ 群照片列表 ]  2016-04-26 20:47:06
+[{"path":"img\/group\/201604251312291866540.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312305047361.jpeg","create_time":"2016-04-25 13:12:31"},{"path":"img\/group\/201604251312302303252.jpeg","create_time":"2016-04-25 13:12:31"}]
+
+[ 群公告列表 ]  2016-04-26 20:47:08
+SELECT A.id as announce_id, A.group_id,A.leader_id,B.user_name,A.title,A.content,A.create_time FROM `yd_group_announce`
+              AS A LEFT JOIN `yd_user` AS B ON A.leader_id = B.leader_id WHERE A.is_valid = 1 AND A.group_id = 10000 ORDER BY A.create_time DESC

@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ca94d1a-2345-4d48-911f-53fe95ebadfa" name="Default" comment="" />
+    <ignored path="Chat.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Chat" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.21.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/js/index.21.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="159" column="86" selection-start-line="159" selection-start-column="86" selection-end-line="159" selection-end-column="86" />
+              <folding>
+                <marker date="1458294651218" expanded="true" signature="4321:4869" placeholder="..." />
+                <marker date="1458294651218" expanded="true" signature="4370:4420" placeholder="..." />
+                <marker date="1458294651218" expanded="true" signature="4566:4863" placeholder="..." />
+                <marker date="1458294651218" expanded="true" signature="4680:4857" placeholder="..." />
+                <marker date="1458294651218" expanded="true" signature="5342:5827" placeholder="..." />
+                <marker date="1458294651218" expanded="true" signature="5391:5441" placeholder="..." />
+                <marker date="1458294651218" expanded="true" signature="5587:5821" placeholder="..." />
+                <marker date="1458294651218" expanded="true" signature="5638:5815" placeholder="..." />
+                <marker date="1458294651218" expanded="true" signature="9253:9355" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.9.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/css/page.9.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chatroom.14.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Web/css/chatroom.14.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.625">
+              <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="msg.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Yidou/msg.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1013" column="59" selection-start-line="1013" selection-start-column="59" selection-end-line="1013" selection-end-column="59" />
+              <folding>
+                <element signature="e#877#902#0#PHP" expanded="true" />
+                <element signature="e#1073#1989#0#PHP" expanded="false" />
+                <element signature="e#2109#2668#0#PHP" expanded="false" />
+                <element signature="e#2670#2731#0#PHP" expanded="false" />
+                <element signature="e#2732#7948#0#PHP" expanded="false" />
+                <element signature="e#8019#10726#0#PHP" expanded="false" />
+                <marker date="1458286617546" expanded="true" signature="4525:4622" placeholder="SELECT DISTI... yd_group_member" />
+                <marker date="1458286617546" expanded="true" signature="8985:9079" placeholder="SELECT DISTI... yd_group_member" />
+                <marker date="1458286617546" expanded="true" signature="19623:19896" placeholder="SELECT B.gro... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="19623:20342" placeholder="SELECT B.gro... " />
+                <marker date="1458286617546" expanded="true" signature="19939:20342" placeholder="SELECT B.gro... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="20190:20282" placeholder="SELECT 1 FRO... yd_group_member" />
+                <marker date="1458286617546" expanded="true" signature="20697:20810" placeholder="UPDATE `yd_u... " />
+                <marker date="1458286617546" expanded="true" signature="21201:21313" placeholder="UPDATE `yd_u... " />
+                <marker date="1458286617546" expanded="true" signature="21882:21952" placeholder="INSERT INTO `yd_user_follow`... " />
+                <marker date="1458286617546" expanded="true" signature="22421:22630" placeholder="SELECT A.lea... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="22421:22866" placeholder="SELECT A.lea... " />
+                <marker date="1458286617546" expanded="true" signature="22515:22629" placeholder="SELECT 1 FRO... yd_user_follow" />
+                <marker date="1458286617546" expanded="true" signature="22651:22866" placeholder="SELECT A.lea... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="22751:22865" placeholder="SELECT 1 FRO... yd_user_follow" />
+                <marker date="1458286617546" expanded="true" signature="23247:23364" placeholder="INSERT INTO `yd_user_follow`... " />
+                <marker date="1458286617546" expanded="true" signature="23716:23847" placeholder="UPDATE `yd_u... " />
+                <marker date="1458286617546" expanded="true" signature="24121:24178" placeholder="SELECT * FRO... yd_group" />
+                <marker date="1458286617546" expanded="true" signature="24256:24444" placeholder="SELECt DISTI... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="25076:25128" placeholder="SELECT MAX(g... yd_group" />
+                <marker date="1458286617546" expanded="true" signature="25297:25537" placeholder="INSERT INTO `yd_group`... " />
+                <marker date="1458286617546" expanded="true" signature="25620:25823" placeholder="INSERT INTO `yd_group_member`... " />
+                <marker date="1458286617546" expanded="true" signature="26623:26848" placeholder="SELECT DISTI... yd_group" />
+                <marker date="1458286617546" expanded="true" signature="27102:27357" placeholder="SELECT A.lea... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="28000:28203" placeholder="INSERT INTO `yd_groupmsg`... " />
+                <marker date="1458286617546" expanded="true" signature="29196:29374" placeholder="INSERT INTO `yd_chatmsg`... " />
+                <marker date="1458286617546" expanded="true" signature="29196:29411" placeholder="INSERT INTO `yd_chatmsg`... " />
+                <marker date="1458286617546" expanded="true" signature="29501:29679" placeholder="INSERT INTO `yd_unread_user_msg`... " />
+                <marker date="1458286617546" expanded="true" signature="30947:31393" placeholder="SELECT A.id yd_groupmsg" />
+                <marker date="1458286617546" expanded="true" signature="31355:31388" placeholder="SELECT MAX(i... yd_groupmsg" />
+                <marker date="1458286617546" expanded="true" signature="31457:31935" placeholder="SELECT A.id yd_groupmsg" />
+                <marker date="1458286617546" expanded="true" signature="32567:33129" placeholder="SELECT A.id,... yd_chatmsg" />
+                <marker date="1458286617546" expanded="true" signature="33169:33783" placeholder="SELECT A.id,... yd_chatmsg" />
+                <marker date="1458286617546" expanded="true" signature="34386:34454" placeholder="SELECT * FRO... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="34473:34569" placeholder="SELECT `foll... yd_user_follow" />
+                <marker date="1458286617546" expanded="true" signature="35073:35165" placeholder="UPDATE `yd_u... " />
+                <marker date="1458286617546" expanded="true" signature="35466:35552" placeholder="UPDATE `yd_u... " />
+                <marker date="1458286617546" expanded="true" signature="35851:35940" placeholder="UPDATE `yd_u... " />
+                <marker date="1458286617546" expanded="true" signature="36755:37087" placeholder="SELECT A.lea... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="37973:38227" placeholder="SELECT id,se... yd_chatmsg" />
+                <marker date="1458286617546" expanded="true" signature="38101:38226" placeholder="SELECT MAX(i... yd_chatmsg" />
+                <marker date="1458286617546" expanded="true" signature="39156:39377" placeholder="SELECT A.gro... yd_group" />
+                <marker date="1458286617546" expanded="true" signature="40167:40402" placeholder="SELECT id, g... yd_groupmsg" />
+                <marker date="1458286617546" expanded="true" signature="40276:40401" placeholder="SELECT MAX(i... yd_groupmsg" />
+                <marker date="1458286617546" expanded="true" signature="40939:41001" placeholder="SELECT * FRO... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="41224:41466" placeholder="SELECT A.lea... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="43715:43765" placeholder="SELECT `lead... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="47567:47619" placeholder="SELECT * FRO... yd_group" />
+                <marker date="1458286617546" expanded="true" signature="51685:51738" placeholder="SELECT * FRO... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="52211:52309" placeholder="SELECT * FRO... yd_login_info" />
+                <marker date="1458286617546" expanded="true" signature="53413:53613" placeholder="INSERT INTO `yd_user`... " />
+                <marker date="1458286617546" expanded="true" signature="53786:53975" placeholder="INSERT INTO `yd_group_member`... " />
+                <marker date="1458286617546" expanded="true" signature="54097:54285" placeholder="INSERT INTO `yd_groupmsg`... " />
+                <marker date="1458286617546" expanded="true" signature="54097:54331" placeholder="INSERT INTO `yd_groupmsg`... " />
+                <marker date="1458286617546" expanded="true" signature="55959:56036" placeholder="UPDATE `yd_u... " />
+                <marker date="1458286617546" expanded="true" signature="56309:56574" placeholder="SELECT DISTI... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="57196:57474" placeholder="SELECT B . l... yd_general_contacts" />
+                <marker date="1458286617546" expanded="true" signature="60421:60572" placeholder="INSERT INTO `yd_login_info`... " />
+                <marker date="1458286617546" expanded="true" signature="60687:60763" placeholder="UPDATE `yd_u... " />
+                <marker date="1458286617546" expanded="true" signature="60880:61136" placeholder="SELECT A.lea... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="62390:62457" placeholder="SELECT id FR... yd_user" />
+                <marker date="1458286617546" expanded="true" signature="62535:62669" placeholder="INSERT INTO `yd_user`... " />
+                <marker date="1458286617546" expanded="true" signature="63186:63280" placeholder="INSERT INTO `yd_chatmsg`... " />
+                <marker date="1458286617546" expanded="true" signature="64224:64442" placeholder="SELECT COUNT... yd_chatmsg" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/js/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="message.def.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/js/message.def.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="69" column="20" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chatroom.class.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/js/chatroom.class.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="155" column="41" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
+              <folding>
+                <marker date="1458281666734" expanded="true" signature="911:1663" placeholder="..." />
+                <marker date="1458281666734" expanded="true" signature="951:1128" placeholder="..." />
+                <marker date="1458281666734" expanded="true" signature="991:1122" placeholder="..." />
+                <marker date="1458281666734" expanded="true" signature="1170:1514" placeholder="..." />
+                <marker date="1458281666734" expanded="false" signature="1573:1587" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Web/index.php" />
+        <option value="$PROJECT_DIR$/Web/js/util.js" />
+        <option value="$PROJECT_DIR$/Web/js/chatroom.class.js" />
+        <option value="$PROJECT_DIR$/Web/js/message.def.js" />
+        <option value="$PROJECT_DIR$/Web/js/index.20.js" />
+        <option value="$PROJECT_DIR$/Yidou/msg.php" />
+        <option value="$PROJECT_DIR$/Web/js/index.21.js" />
+        <option value="$PROJECT_DIR$/Web/css/chatroom.14.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1366" />
+    <option name="height" value="738" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yidou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../tpl_create" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ca94d1a-2345-4d48-911f-53fe95ebadfa" name="Default" comment="" />
+      <created>1458263568546</created>
+      <option name="number" value="Default" />
+      <updated>1458263568546</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="738" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2849544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/js/index.21.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="86" selection-start-line="159" selection-start-column="86" selection-end-line="159" selection-end-column="86" />
+          <folding>
+            <marker date="1458294651218" expanded="true" signature="4321:4869" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="4370:4420" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="4566:4863" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="4680:4857" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="5342:5827" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="5391:5441" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="5587:5821" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="5638:5815" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="9253:9355" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/css/page.9.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/css/chatroom.14.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yidou/msg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1013" column="59" selection-start-line="1013" selection-start-column="59" selection-end-line="1013" selection-end-column="59" />
+          <folding>
+            <element signature="e#877#902#0#PHP" expanded="true" />
+            <element signature="e#1073#1989#0#PHP" expanded="false" />
+            <element signature="e#2109#2668#0#PHP" expanded="false" />
+            <element signature="e#2670#2731#0#PHP" expanded="false" />
+            <element signature="e#2732#7948#0#PHP" expanded="false" />
+            <element signature="e#8019#10726#0#PHP" expanded="false" />
+            <marker date="1458286617546" expanded="true" signature="4525:4622" placeholder="SELECT DISTI... yd_group_member" />
+            <marker date="1458286617546" expanded="true" signature="8985:9079" placeholder="SELECT DISTI... yd_group_member" />
+            <marker date="1458286617546" expanded="true" signature="19623:19896" placeholder="SELECT B.gro... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="19623:20342" placeholder="SELECT B.gro... " />
+            <marker date="1458286617546" expanded="true" signature="19939:20342" placeholder="SELECT B.gro... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="20190:20282" placeholder="SELECT 1 FRO... yd_group_member" />
+            <marker date="1458286617546" expanded="true" signature="20697:20810" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="21201:21313" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="21882:21952" placeholder="INSERT INTO `yd_user_follow`... " />
+            <marker date="1458286617546" expanded="true" signature="22421:22630" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="22421:22866" placeholder="SELECT A.lea... " />
+            <marker date="1458286617546" expanded="true" signature="22515:22629" placeholder="SELECT 1 FRO... yd_user_follow" />
+            <marker date="1458286617546" expanded="true" signature="22651:22866" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="22751:22865" placeholder="SELECT 1 FRO... yd_user_follow" />
+            <marker date="1458286617546" expanded="true" signature="23247:23364" placeholder="INSERT INTO `yd_user_follow`... " />
+            <marker date="1458286617546" expanded="true" signature="23716:23847" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="24121:24178" placeholder="SELECT * FRO... yd_group" />
+            <marker date="1458286617546" expanded="true" signature="24256:24444" placeholder="SELECt DISTI... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="25076:25128" placeholder="SELECT MAX(g... yd_group" />
+            <marker date="1458286617546" expanded="true" signature="25297:25537" placeholder="INSERT INTO `yd_group`... " />
+            <marker date="1458286617546" expanded="true" signature="25620:25823" placeholder="INSERT INTO `yd_group_member`... " />
+            <marker date="1458286617546" expanded="true" signature="26623:26848" placeholder="SELECT DISTI... yd_group" />
+            <marker date="1458286617546" expanded="true" signature="27102:27357" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="28000:28203" placeholder="INSERT INTO `yd_groupmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="29196:29374" placeholder="INSERT INTO `yd_chatmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="29196:29411" placeholder="INSERT INTO `yd_chatmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="29501:29679" placeholder="INSERT INTO `yd_unread_user_msg`... " />
+            <marker date="1458286617546" expanded="true" signature="30947:31393" placeholder="SELECT A.id yd_groupmsg" />
+            <marker date="1458286617546" expanded="true" signature="31355:31388" placeholder="SELECT MAX(i... yd_groupmsg" />
+            <marker date="1458286617546" expanded="true" signature="31457:31935" placeholder="SELECT A.id yd_groupmsg" />
+            <marker date="1458286617546" expanded="true" signature="32567:33129" placeholder="SELECT A.id,... yd_chatmsg" />
+            <marker date="1458286617546" expanded="true" signature="33169:33783" placeholder="SELECT A.id,... yd_chatmsg" />
+            <marker date="1458286617546" expanded="true" signature="34386:34454" placeholder="SELECT * FRO... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="34473:34569" placeholder="SELECT `foll... yd_user_follow" />
+            <marker date="1458286617546" expanded="true" signature="35073:35165" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="35466:35552" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="35851:35940" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="36755:37087" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="37973:38227" placeholder="SELECT id,se... yd_chatmsg" />
+            <marker date="1458286617546" expanded="true" signature="38101:38226" placeholder="SELECT MAX(i... yd_chatmsg" />
+            <marker date="1458286617546" expanded="true" signature="39156:39377" placeholder="SELECT A.gro... yd_group" />
+            <marker date="1458286617546" expanded="true" signature="40167:40402" placeholder="SELECT id, g... yd_groupmsg" />
+            <marker date="1458286617546" expanded="true" signature="40276:40401" placeholder="SELECT MAX(i... yd_groupmsg" />
+            <marker date="1458286617546" expanded="true" signature="40939:41001" placeholder="SELECT * FRO... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="41224:41466" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="43715:43765" placeholder="SELECT `lead... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="47567:47619" placeholder="SELECT * FRO... yd_group" />
+            <marker date="1458286617546" expanded="true" signature="51685:51738" placeholder="SELECT * FRO... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="52211:52309" placeholder="SELECT * FRO... yd_login_info" />
+            <marker date="1458286617546" expanded="true" signature="53413:53613" placeholder="INSERT INTO `yd_user`... " />
+            <marker date="1458286617546" expanded="true" signature="53786:53975" placeholder="INSERT INTO `yd_group_member`... " />
+            <marker date="1458286617546" expanded="true" signature="54097:54285" placeholder="INSERT INTO `yd_groupmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="54097:54331" placeholder="INSERT INTO `yd_groupmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="55959:56036" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="56309:56574" placeholder="SELECT DISTI... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="57196:57474" placeholder="SELECT B . l... yd_general_contacts" />
+            <marker date="1458286617546" expanded="true" signature="60421:60572" placeholder="INSERT INTO `yd_login_info`... " />
+            <marker date="1458286617546" expanded="true" signature="60687:60763" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="60880:61136" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="62390:62457" placeholder="SELECT id FR... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="62535:62669" placeholder="INSERT INTO `yd_user`... " />
+            <marker date="1458286617546" expanded="true" signature="63186:63280" placeholder="INSERT INTO `yd_chatmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="64224:64442" placeholder="SELECT COUNT... yd_chatmsg" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/js/message.def.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="20" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/js/chatroom.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="155" column="41" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
+          <folding>
+            <marker date="1458281666734" expanded="true" signature="911:1663" placeholder="..." />
+            <marker date="1458281666734" expanded="true" signature="951:1128" placeholder="..." />
+            <marker date="1458281666734" expanded="true" signature="991:1122" placeholder="..." />
+            <marker date="1458281666734" expanded="true" signature="1170:1514" placeholder="..." />
+            <marker date="1458281666734" expanded="false" signature="1573:1587" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/js/chatroom.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="155" column="41" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
+          <folding>
+            <marker date="1458281666734" expanded="true" signature="911:1663" placeholder="..." />
+            <marker date="1458281666734" expanded="true" signature="951:1128" placeholder="..." />
+            <marker date="1458281666734" expanded="true" signature="991:1122" placeholder="..." />
+            <marker date="1458281666734" expanded="true" signature="1170:1514" placeholder="..." />
+            <marker date="1458281666734" expanded="false" signature="1573:1587" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yidou/msg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1013" column="59" selection-start-line="1013" selection-start-column="59" selection-end-line="1013" selection-end-column="59" />
+          <folding>
+            <element signature="e#877#902#0#PHP" expanded="true" />
+            <element signature="e#1073#1989#0#PHP" expanded="false" />
+            <element signature="e#2109#2668#0#PHP" expanded="false" />
+            <element signature="e#2670#2731#0#PHP" expanded="false" />
+            <element signature="e#2732#7948#0#PHP" expanded="false" />
+            <element signature="e#8019#10726#0#PHP" expanded="false" />
+            <marker date="1458286617546" expanded="true" signature="4525:4622" placeholder="SELECT DISTI... yd_group_member" />
+            <marker date="1458286617546" expanded="true" signature="8985:9079" placeholder="SELECT DISTI... yd_group_member" />
+            <marker date="1458286617546" expanded="true" signature="19623:19896" placeholder="SELECT B.gro... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="19623:20342" placeholder="SELECT B.gro... " />
+            <marker date="1458286617546" expanded="true" signature="19939:20342" placeholder="SELECT B.gro... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="20190:20282" placeholder="SELECT 1 FRO... yd_group_member" />
+            <marker date="1458286617546" expanded="true" signature="20697:20810" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="21201:21313" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="21882:21952" placeholder="INSERT INTO `yd_user_follow`... " />
+            <marker date="1458286617546" expanded="true" signature="22421:22630" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="22421:22866" placeholder="SELECT A.lea... " />
+            <marker date="1458286617546" expanded="true" signature="22515:22629" placeholder="SELECT 1 FRO... yd_user_follow" />
+            <marker date="1458286617546" expanded="true" signature="22651:22866" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="22751:22865" placeholder="SELECT 1 FRO... yd_user_follow" />
+            <marker date="1458286617546" expanded="true" signature="23247:23364" placeholder="INSERT INTO `yd_user_follow`... " />
+            <marker date="1458286617546" expanded="true" signature="23716:23847" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="24121:24178" placeholder="SELECT * FRO... yd_group" />
+            <marker date="1458286617546" expanded="true" signature="24256:24444" placeholder="SELECt DISTI... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="25076:25128" placeholder="SELECT MAX(g... yd_group" />
+            <marker date="1458286617546" expanded="true" signature="25297:25537" placeholder="INSERT INTO `yd_group`... " />
+            <marker date="1458286617546" expanded="true" signature="25620:25823" placeholder="INSERT INTO `yd_group_member`... " />
+            <marker date="1458286617546" expanded="true" signature="26623:26848" placeholder="SELECT DISTI... yd_group" />
+            <marker date="1458286617546" expanded="true" signature="27102:27357" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="28000:28203" placeholder="INSERT INTO `yd_groupmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="29196:29374" placeholder="INSERT INTO `yd_chatmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="29196:29411" placeholder="INSERT INTO `yd_chatmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="29501:29679" placeholder="INSERT INTO `yd_unread_user_msg`... " />
+            <marker date="1458286617546" expanded="true" signature="30947:31393" placeholder="SELECT A.id yd_groupmsg" />
+            <marker date="1458286617546" expanded="true" signature="31355:31388" placeholder="SELECT MAX(i... yd_groupmsg" />
+            <marker date="1458286617546" expanded="true" signature="31457:31935" placeholder="SELECT A.id yd_groupmsg" />
+            <marker date="1458286617546" expanded="true" signature="32567:33129" placeholder="SELECT A.id,... yd_chatmsg" />
+            <marker date="1458286617546" expanded="true" signature="33169:33783" placeholder="SELECT A.id,... yd_chatmsg" />
+            <marker date="1458286617546" expanded="true" signature="34386:34454" placeholder="SELECT * FRO... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="34473:34569" placeholder="SELECT `foll... yd_user_follow" />
+            <marker date="1458286617546" expanded="true" signature="35073:35165" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="35466:35552" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="35851:35940" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="36755:37087" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="37973:38227" placeholder="SELECT id,se... yd_chatmsg" />
+            <marker date="1458286617546" expanded="true" signature="38101:38226" placeholder="SELECT MAX(i... yd_chatmsg" />
+            <marker date="1458286617546" expanded="true" signature="39156:39377" placeholder="SELECT A.gro... yd_group" />
+            <marker date="1458286617546" expanded="true" signature="40167:40402" placeholder="SELECT id, g... yd_groupmsg" />
+            <marker date="1458286617546" expanded="true" signature="40276:40401" placeholder="SELECT MAX(i... yd_groupmsg" />
+            <marker date="1458286617546" expanded="true" signature="40939:41001" placeholder="SELECT * FRO... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="41224:41466" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="43715:43765" placeholder="SELECT `lead... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="47567:47619" placeholder="SELECT * FRO... yd_group" />
+            <marker date="1458286617546" expanded="true" signature="51685:51738" placeholder="SELECT * FRO... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="52211:52309" placeholder="SELECT * FRO... yd_login_info" />
+            <marker date="1458286617546" expanded="true" signature="53413:53613" placeholder="INSERT INTO `yd_user`... " />
+            <marker date="1458286617546" expanded="true" signature="53786:53975" placeholder="INSERT INTO `yd_group_member`... " />
+            <marker date="1458286617546" expanded="true" signature="54097:54285" placeholder="INSERT INTO `yd_groupmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="54097:54331" placeholder="INSERT INTO `yd_groupmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="55959:56036" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="56309:56574" placeholder="SELECT DISTI... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="57196:57474" placeholder="SELECT B . l... yd_general_contacts" />
+            <marker date="1458286617546" expanded="true" signature="60421:60572" placeholder="INSERT INTO `yd_login_info`... " />
+            <marker date="1458286617546" expanded="true" signature="60687:60763" placeholder="UPDATE `yd_u... " />
+            <marker date="1458286617546" expanded="true" signature="60880:61136" placeholder="SELECT A.lea... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="62390:62457" placeholder="SELECT id FR... yd_user" />
+            <marker date="1458286617546" expanded="true" signature="62535:62669" placeholder="INSERT INTO `yd_user`... " />
+            <marker date="1458286617546" expanded="true" signature="63186:63280" placeholder="INSERT INTO `yd_chatmsg`... " />
+            <marker date="1458286617546" expanded="true" signature="64224:64442" placeholder="SELECT COUNT... yd_chatmsg" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/js/message.def.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="20" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/js/index.21.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="86" selection-start-line="159" selection-start-column="86" selection-end-line="159" selection-end-column="86" />
+          <folding>
+            <marker date="1458294651218" expanded="true" signature="4321:4869" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="4370:4420" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="4566:4863" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="4680:4857" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="5342:5827" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="5391:5441" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="5587:5821" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="5638:5815" placeholder="..." />
+            <marker date="1458294651218" expanded="true" signature="9253:9355" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/css/page.9.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/css/chatroom.14.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.625">
+          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

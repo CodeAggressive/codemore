@@ -1,0 +1,82 @@
+/******** 私聊底部按钮 **********/
+.chat-submit {
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+    min-height: 2.8rem;
+    background-color: #FFF;
+    padding-top: 0.1rem;
+    padding-bottom: 0.4rem;
+}
+
+.textarea {
+    float: left;
+    margin-left: 0.4rem;
+    margin-top: 0.4rem;
+    width: 12.6rem;
+    min-height: 2rem;
+    padding: 0.3rem;
+    border: 1px solid #AAA;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+}
+
+.btn-send-group-msg, .btn-send-user-msg {
+    float: left;
+    margin-left: 0.6rem;
+    margin-top: 0.4rem;
+    width: 3.6rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    color: #888;
+    -webkit-border-radius: 0.3rem;
+}
+
+.btn-emotion {
+    float: left;
+    background-image: url("../img/emotion.png");
+    background-size: 100% 100%;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+.ld-em-wrapper {
+    display: none;
+    width: 20rem;
+    height: 10.4rem;
+    float: left;
+}
+
+.emotion-face {
+    width: 1.8rem;
+    height: 1.8rem;
+    display: inline-block;
+}
+
+.ld-em-face, .ld-em-delete {
+    width: 1.8rem;
+    height: 1.8rem;
+    display: block;
+    float: left;
+    position:relative;
+    margin-left: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.emotion-sub {
+    width: 1rem;
+    height: 1rem;
+}
+
+.emb-img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #FF0000;
+}

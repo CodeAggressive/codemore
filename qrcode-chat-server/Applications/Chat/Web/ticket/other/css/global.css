@@ -1,0 +1,84 @@
+/*CSS公用样式*/
+html,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, blockquote, th, td {
+    margin:0;
+    padding:0;
+}
+
+body{
+    scrollbar-face-color: #f6f6f6;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-shadow-color: #cccccc;
+    scrollbar-3dlight-color: #cccccc;
+    scrollbar-arrow-color: #330000;
+    scrollbar-track-color: #f6f6f6;
+    font-family:"微软雅黑";
+    font-size:12px;
+    background:#FFF;
+}
+input[type=button]{
+    -webkit-appearance:none;
+    appearance:none;
+}
+a{text-decoration: none}
+
+table {border-collapse:collapse;border-spacing:0;}
+
+img {border:0;}
+
+li {list-style:none;}
+
+sup {vertical-align:text-top;}
+
+sub {vertical-align:text-bottom;}
+
+input, textarea, select {font-family:inherit;font-size:inherit;font-weight:inherit;}
+/*带清除高度的10PX高的空DIV*/
+.blank{clear:both;height:10px;overflow:hidden;font-size:0px;}
+.blank1{clear:both;height:5px;overflow:hidden;font-size:0px;}
+
+/*单行隐藏*/
+.str{white-space:nowrap;word-break:keep-all;overflow:hidden;text-overflow:ellipsis;}
+
+/*多行隐藏*/
+.strmore{overflow:hidden;text-overflow:ellipsis;}
+
+/*带清除高度的0PX高的空DIV*/
+.cls{clear:both;height:0px;overflow:hidden;background:#FFF;}
+input[type=button]{
+    -webkit-appearance:none;
+}
+/*#foot{*/
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+    /*height: 1rem;*/
+    /*border-top: 1px solid #cccccc;*/
+    /*left: 0;*/
+    /*background-color: #f4f4f4;*/
+    /*z-index: 9999;*/
+/*}*/
+/*#foot ul li{*/
+    /*float: left;*/
+    /*width: 25%;*/
+    /*text-align: center;*/
+    /*font-size: .25rem;*/
+    /*color: #777777;*/
+/*}*/
+/*#foot ul li img{*/
+    /*width: .5rem;*/
+    /*margin: .06rem 0;*/
+/*}*/
+/*.active{*/
+    /*color: #e68513 !important;*/
+/*}*/
+/*#foot ul li div.l_active{*/
+    /*display: none;*/
+/*}*/
+/*#foot ul li.active div.l_active{*/
+    /*display: inherit !important;*/
+/*}*/
+
+
+
+
+
